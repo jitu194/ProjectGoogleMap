@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="#ffffff"
+    android:descendantFocusability="beforeDescendants"
+
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Signup">
+
+    <include layout="@layout/tooldemo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:id="@+id/include" />
+
+    <ImageView
+        android:id="@+id/kavent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kavent"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" User Name"
+        android:background="@drawable/rounds"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/userId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint=" Password"
+        android:background="@drawable/rounds"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:password="true"
+        android:maxLength="20" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:onClick="sendMessage"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/curve"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/forgotPassword"
+        android:layout_gravity="right" />
+    </LinearLayout>
